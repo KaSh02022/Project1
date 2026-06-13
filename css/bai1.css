@@ -4,6 +4,31 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 15px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal; 
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-emoji: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 1px;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-size-adjust: 100%;
+    width: 1px;
 }
 
 
