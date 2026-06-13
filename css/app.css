@@ -1,0 +1,19 @@
+body{
+    background-color: #ffe4ff;
+    background-image: url("../images/index.html.png");
+    background-size: cover;
+
+}
+h1{
+
+}
+p{
+    color: #353d33;
+    front-size: 20px;
+    line-height: 1.5;
+    font-family: 'Time New Roman', Times, serif;
+    text-align: justify;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+}

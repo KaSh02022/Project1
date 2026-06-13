@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu nhân xanh</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Một đời người một rừng cây</h2>
+    <p>Project: D:\Phần mềm lập trình dự án\Tiềm năng\Vsubtitle
+
+Context: MAINTENANCE_LOG.md is authoritative system design (DO NOT redesign architecture).
+
+<b>CRITICAL ISSUES</b>:
+1. Backend subtitle pipeline bug:
+   - PendingRollbackError (SQLAlchemy session stuck after failed commit/execute)
+   - Pydantic 500 due to None propagation in translation result
+   - Incorrect error classification causing valid partial jobs to become "error"
+
+2. NEW ISSUE AFTER FIX:
+   - Frontend at <u>http://localhost:5173/</u> is broken (UI not loading / blank / API mismatch / runtime error likely caused by backend contract changes)
+
+GOAL:
+Fix BOTH backend + frontend so system is fully stable end-to-end.
+
+TASKS:
+
+A. BACKEND FIX (must be minimal patch):
+- Fix SQLAlchemy session lifecycle so NO PendingRollbackError can occur
+  (every DB exception must rollback + reset session safely, no dirty reuse)
+- Ensure translator output NEVER returns None (normalize or raise retryable error)
+- Ensure Pydantic / progress builder never receives None values
+- Ensure failure classification:
+    - segment failure => "partial"
+    - only fatal system failure => "error"
+- Do NOT redesign architecture, only fix transactional safety + data contracts
+
+B. FRONTEND FIX:
+- Diagnose why http://localhost:5173/ is broken after backend changes
+- Likely causes: API response shape change, null field, missing property, or runtime JS crash
+- Fix frontend to be compatible with corrected backend API
+- Ensure UI can:
+    - handle "partial" status safely
+    - handle missing/empty segments without crashing
+    - never break render due to undefined/null fields
+
+REQUIREMENTS:
+- Minimal diffs only (no refactor, no redesign)
+- Keep existing architecture (registry, SQLite single-writer, FFmpeg pipeline)
+- Ensure backward-compatible API contract OR update frontend accordingly
+- No feature additions
+
+OUTPUT FORMAT:
+1. Root cause (backend + frontend separated, max 5 bullets total)
+2. Files modified (backend + frontend)
+3. Unified patch diff
+4. Verification steps:
+   - forced DB exception test
+   - forced translator None test
+   - full SRT end-to-end test
+   - frontend render test (empty/partial/error states)
+
+STRICT:
+- no architectural redesign
+- no extra features
+- focus only on stability + compatibility fix</p>
+<p>
+    <a href="https://faps.fptacademy.vn/NewPage/WeeklyTimetable.aspx">World cup 2026</a>
+    <a target="_blank">World cup 2026</a>
+    </p>
+    <p>
+        Mẫu html đẹp 
+        <img src="./images/index.html.png"/>
+    </p>
+    <audio controls>
+        <source src="audio/7120e5cb59c04c71bf0075711e83c2b8_vi.mp4">
+    </audio>
+    <video width="480" height="240" controls>
+        <source src="audio/7120e5cb59c04c71bf0075711e83c2b8_vi.mp4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BPL67g-aXbY?si=hpzayf2btlZdPWIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </video>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BPL67g-aXbY?si=hpzayf2btlZdPWIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </video>
+    <ul>
+        <li> Lẩu</li>
+        <li> Xôi</li>
+        <li> Nướng</li>
+    </ul>
+    <table>
+        <thead>
+            <th>STT</th>
+            <th>Ngày sinh</th>
+            <th>Số điện thoại</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>12/02/22</td>
+                <td>0987551238</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
